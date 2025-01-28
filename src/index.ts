@@ -80,7 +80,7 @@ export class ErrorsPrinter {
   /**
    * Display chai assertion error
    */
-  async displayAssertionError(_: any) {
+  async displayFooError(_: any) {
     // if (error.showDiff) {
     //   console.error()
     // const { actual, expected } = error
