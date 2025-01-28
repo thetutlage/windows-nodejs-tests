@@ -1,3 +1,5 @@
-export function sum(a, b) {
-  return a + b
+export class Maths {
+  async sum(a: number, b: number) {
+    return a + b
+  }
 }
