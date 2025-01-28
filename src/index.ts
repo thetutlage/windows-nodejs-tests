@@ -136,9 +136,6 @@ export class ErrorsPrinter {
    * Pretty print the error to the console
    */
   async printError(_: any) {
-    // /**
-    //  * Values that are not object objects are printed as it is.
-    //  */
     // if (error === null || Array.isArray(error) || typeof error !== 'object') {
     //   console.error(`Error: ${error}`)
     //   return
@@ -150,9 +147,6 @@ export class ErrorsPrinter {
     //   await this.displayAssertionError(error)
     //   return
     // }
-    // /**
-    //  * Print all other errors using Youch
-    //  */
     // await this.displayErrorStack(error)
   }
 
