@@ -80,21 +80,21 @@ export class ErrorsPrinter {
   /**
    * Display chai assertion error
    */
-  async displayAssertionError(_: any) {
-    // if (error.showDiff) {
-    //   console.error()
-    // const { actual, expected } = error
-    // const diff = jestDiff(expected, actual, {
-    //   expand: true,
-    //   includeChangeCounts: true,
-    // })
-    // console.error(diff)
-    // }
-    /**
-     * Pretty print error stack
-     */
-    // await this.#displayErrorStack(error)
-  }
+  // async displayAssertionError(_: any) {
+  //   // if (error.showDiff) {
+  //   //   console.error()
+  //   // const { actual, expected } = error
+  //   // const diff = jestDiff(expected, actual, {
+  //   //   expand: true,
+  //   //   includeChangeCounts: true,
+  //   // })
+  //   // console.error(diff)
+  //   // }
+  //   /**
+  //    * Pretty print error stack
+  //    */
+  //   // await this.#displayErrorStack(error)
+  // }
 
   /**
    * Prints a section with heading and borders around it
