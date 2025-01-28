@@ -1,3 +1,8 @@
+on:
+  - push
+  - pull_request
+  - workflow_call
+
 name: test
 jobs:
   test_linux:
