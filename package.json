@@ -26,7 +26,7 @@
     "prepublishOnly": "npm run build",
     "release": "release-it",
     "clean": "del build",
-    "quick:test": "glob -c \"node --import=ts-node-maintained/register/esm --enable-source-maps --test-reporter=spec --test\" \"tests/*.spec.ts\""
+    "quick:test": "glob -c \"node --enable-source-maps --test-reporter=spec --test\" \"tests/*.spec.js\""
   },
   "devDependencies": {
     "@adonisjs/eslint-config": "^2.0.0-beta.7",
