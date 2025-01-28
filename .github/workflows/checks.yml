@@ -1,48 +1,13 @@
+name: test
 on:
   - push
   - pull_request
   - workflow_call
 
-name: test
 jobs:
-  test_linux:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [22.x, latest]
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Run tests
-      run: npm test
-
-  test_windows:
-    runs-on: windows-latest
-    strategy:
-      matrix:
-        node-version: [22.x, latest]
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Run tests
-      run: npm test
+  test:
+    uses: japa/.github/.github/workflows/test.yml@main
+  lint:
+    uses: japa/.github/.github/workflows/lint.yml@main
+  typecheck:
+    uses: japa/.github/.github/workflows/typecheck.yml@main
