@@ -11,4 +11,12 @@ test.describe('setup', () => {
       await new ErrorsPrinter().printError(error)
     }
   })
+
+  test('another failing test', async () => {
+    try {
+      assert.equal(sum(2, 2), 5)
+    } catch (error) {
+      await new ErrorsPrinter().printError(error)
+    }
+  })
 })
