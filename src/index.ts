@@ -1,18 +1,3 @@
-// import { Youch } from 'youch'
-// import colors from '@poppinss/colors'
-// import supportsColor from 'supports-color'
-// import { diff as jestDiff } from 'jest-diff'
-// import type { ParsedError } from 'youch/types'
-
-// const columns = 80
-// const { columns } = process.stdout
-// const ansi = colors.ansi() // supportsColor.stdout ? colors.ansi() : colors.silent()
-// const pointer = '>' // process.platform === 'win32' && !process.env.WT_SESSION ? '>' : '❯'
-
-/**
- * ErrorsPrinter exposes the API to pretty print errors occurred during
- * tests executed via Japa.
- */
 export class ErrorsPrinter {
   /**
    * Displays the error stack for a given error
