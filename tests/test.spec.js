@@ -1,7 +1,7 @@
 import test from 'node:test'
 import { ErrorsPrinter } from '@japa/errors-printer'
 import { assert } from 'chai'
-import { sum } from './index.js'
+import { sum } from '../index.js'
 
 test.describe('setup', () => {
   test('sum two numbers', async () => {
