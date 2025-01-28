@@ -52,19 +52,19 @@ export class ErrorsPrinter {
   /**
    * Parsers chai assertion error
    */
-  async parseAssertionError(_: any) {
-    // const parsedError = error
-    // if (error.showDiff) {
-    //   console.error()
-    //   // const { actual, expected } = error
-    //   // const diff = jestDiff(expected, actual, {
-    //   //   expand: true,
-    //   //   includeChangeCounts: true,
-    //   // })
-    //   // parsedError.message = `${parsedError.message}\n${diff}`
-    // }
-    // return parsedError
-  }
+  // async parseAssertionError(_: any) {
+  //   // const parsedError = error
+  //   // if (error.showDiff) {
+  //   //   console.error()
+  //   //   // const { actual, expected } = error
+  //   //   // const diff = jestDiff(expected, actual, {
+  //   //   //   expand: true,
+  //   //   //   includeChangeCounts: true,
+  //   //   // })
+  //   //   // parsedError.message = `${parsedError.message}\n${diff}`
+  //   // }
+  //   // return parsedError
+  // }
 
   /**
    * Displays the error stack for a given error
