@@ -22,5 +22,8 @@
     "outDir": "./build",
     "declaration": true,
     "types": ["@types/node"]
+  },
+  "ts-node": {
+    "swc": true
   }
 }
