@@ -1,7 +1,7 @@
 import { assert } from 'chai'
 import test from 'node:test'
 import { ErrorsPrinter } from '@japa/errors-printer'
-import { sum } from '../index.js'
+import { sum } from '../src/index.js'
 
 test.describe('Errors printer', () => {
   test('print assert error', async () => {
