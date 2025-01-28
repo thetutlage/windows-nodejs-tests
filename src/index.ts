@@ -92,4 +92,83 @@ export class ErrorsPrinter {
     // }
     // await this.#displayErrorStack(error)
   }
+
+  /**
+   * Prints section header with a centered title and
+   * borders around it
+   */
+  // printSectionHeader(title: string) {
+  //   const whitspacesWidth = (columns - title.length) / 2
+  //   const [lhsWidth, rhsWidth] = Number.isInteger(whitspacesWidth)
+  //     ? [whitspacesWidth, whitspacesWidth]
+  //     : [whitspacesWidth - 1, whitspacesWidth + 1]
+
+  //   const borderLeft = ansi.red('─'.repeat(lhsWidth - 1))
+  //   const borderRight = ansi.red('─'.repeat(rhsWidth))
+  //   console.error(`${borderLeft}${ansi.bgRed().black(` ${title} `)}${borderRight}`)
+  // }
+
+  /**
+   * Parses an error to JSON
+   */
+  async parseError(_: any) {
+    // /**
+    //  * Values that are not object objects are not parsed
+    //  */
+    // if (error === null || Array.isArray(error) || typeof error !== 'object') {
+    //   return {
+    //     message: String(error),
+    //   }
+    // }
+    // /**
+    //  * Assertion error
+    //  */
+    // if ('actual' in error && 'expected' in error) {
+    //   return this.#parseAssertionError(error)
+    // }
+    // /**
+    //  * Parse all other errors using Youch
+    //  */
+    // return error
+  }
+
+  /**
+   * Pretty print the error to the console
+   */
+  async printError(_: any) {
+    // /**
+    //  * Values that are not object objects are printed as it is.
+    //  */
+    // if (error === null || Array.isArray(error) || typeof error !== 'object') {
+    //   console.error(`Error: ${error}`)
+    //   return
+    // }
+    // /**
+    //  * Assertion error
+    //  */
+    // if ('actual' in error && 'expected' in error) {
+    //   await this.displayAssertionError(error)
+    //   return
+    // }
+    // /**
+    //  * Print all other errors using Youch
+    //  */
+    // await this.displayErrorStack(error)
+  }
+
+  /**
+   * Print summary errors
+   */
+  // async printErrors(errors: { title: string; phase: string; error: any }[]) {
+  //   const errorsCount = errors.length
+  //   let index = 0
+
+  //   for (let { phase, error, title } of errors) {
+  //     const label = phase === 'test' ? title : `${title}: ${this.#getPhaseTitle(phase)}`
+  //     console.error()
+  //     console.error(`${pointer} ${ansi.underline(label)}`)
+  //     await this.printError(error)
+  //     this.printSectionBorder(`[${++index}/${errorsCount}]`)
+  //   }
+  // }
 }
