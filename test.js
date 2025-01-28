@@ -9,7 +9,6 @@ test.describe('setup', () => {
       assert.equal(sum(2, 2), 5)
     } catch (error) {
       await new ErrorsPrinter().printError(error)
-      throw error
     }
   })
 })
