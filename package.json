@@ -7,6 +7,7 @@
     "pretest": "npm run lint",
     "test": "c8 npm run quick:test",
     "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
     "lint": "eslint .",
     "quick:test": "glob -c \"node --import=ts-node-maintained/register/esm --enable-source-maps --test-reporter=spec --test\" \"tests/*.spec.ts\""
   },
