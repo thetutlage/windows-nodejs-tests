@@ -4,13 +4,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node --test test.js"
+    "test": "glob -c \"node --test\" \"test.js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "chai": "^5.1.2"
+    "chai": "^5.1.2",
+    "glob": "^11.0.1"
   }
 }
