@@ -52,8 +52,7 @@ export class ErrorsPrinter {
   /**
    * Parsers chai assertion error
    */
-  async parseAssertionError(error: any) {
-    return error
+  async parseAssertionError(_: any) {
     // const parsedError = error
     // if (error.showDiff) {
     //   console.error()
@@ -64,7 +63,6 @@ export class ErrorsPrinter {
     //   // })
     //   // parsedError.message = `${parsedError.message}\n${diff}`
     // }
-
     // return parsedError
   }
 
