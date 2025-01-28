@@ -52,7 +52,7 @@ export class ErrorsPrinter {
   /**
    * Parsers chai assertion error
    */
-  async parseAssertionError(error: any): Promise<any> {
+  async parseAssertionError(error: any) {
     return error
     // const parsedError = error
     // if (error.showDiff) {
