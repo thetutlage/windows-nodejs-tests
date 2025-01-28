@@ -49,6 +49,7 @@
     "typescript": "^5.7.3"
   },
   "dependencies": {
+    "@japa/errors-printer": "^4.1.0",
     "@poppinss/colors": "^4.1.4",
     "jest-diff": "^29.7.0",
     "supports-color": "^10.0.0",
