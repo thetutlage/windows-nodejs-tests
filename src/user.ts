@@ -1,7 +1,9 @@
 export class User {
-  async displayErrorStack(_: any) {}
+  async getId(_: any) {}
 
-  async displayAssertionError(_: any) {}
+  async getName(_: any) {}
 
-  async parseError(_: any) {}
+  async getEmail(_: any) {}
+
+  async getAllInfo(_: any) {}
 }
