@@ -1,3 +1,3 @@
-import { ErrorsPrinter } from './src/index.ts'
+import { User } from './src/user.ts'
 
-console.log(new ErrorsPrinter())
+console.log(new User())
