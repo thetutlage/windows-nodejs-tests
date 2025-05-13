@@ -1,3 +1,9 @@
 export class User {
-  async getId(_: any) {}
+  async displayErrorStack(_: any) {}
+
+  async displayAssertionError(_: any) {}
+
+  async parseError(_: any) {}
+
+  async printError(_: any) {}
 }
