@@ -5,6 +5,27 @@ on:
   - workflow_call
 
 jobs:
+  test_linux:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ["latest"]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
+
   test_windows:
     runs-on: windows-latest
     strategy:
@@ -12,12 +33,15 @@ jobs:
         node-version: ['latest']
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+
       - name: Install dependencies
         run: npm install
+
       - name: Run tests
         run: npm test
