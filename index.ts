@@ -1,1 +1,3 @@
-console.log('Loaded')
+import { ErrorsPrinter } from './src/index.ts'
+
+console.log(new ErrorsPrinter())
