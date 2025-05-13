@@ -8,7 +8,7 @@ export async function resolve(specifier, context, nextResolve) {
 export async function load(url, context, nextLoad) {
   const { source } = await nextLoad(url, context)
 
-  const code = transformSync(source.toString(), {
+  const { code, map } = transformSync(source.toString(), {
     sourceMaps: true,
     module: {
       type: 'es6',
@@ -19,11 +19,17 @@ export async function load(url, context, nextLoad) {
         syntax: 'typescript',
       },
     },
-  }).code
+  })
 
-  console.log({ code })
+  let output = code
+  if (map) {
+    const base64SourceMap = Buffer.from(map).toString('base64')
+    output = `${code}\n\n//# sourceMappingURL=data:application/json;base64,${base64SourceMap}\n\n//# sourceURL=${url}`
+  }
+
+  console.log(output)
   return {
     format: 'module',
-    source: code,
+    source: `${output}`,
   }
 }
