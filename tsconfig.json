@@ -7,6 +7,7 @@
     "noUnusedParameters": true,
     "isolatedModules": true,
     "removeComments": false,
+    "rewriteRelativeImportExtensions": true,
     "esModuleInterop": true,
     "strictNullChecks": true,
     "allowSyntheticDefaultImports": true,
