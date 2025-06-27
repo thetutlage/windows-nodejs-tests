@@ -10,8 +10,8 @@
     "test": "node --import=./register.js index.ts"
   },
   "devDependencies": {
-    "@swc/core": "1.11.24",
-    "@types/node": "^22.15.17",
+    "@swc/core": "1.12.7",
+    "@types/node": "^24.0.4",
     "typescript": "^5.8.3"
   }
 }
